@@ -1,0 +1,8 @@
+anthropic
+sentence-transformers
+faiss-cpu
+numpy
+pandas
+streamlit
+python-dotenv
+tqdm
