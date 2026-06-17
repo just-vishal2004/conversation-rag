@@ -29,7 +29,7 @@ TOP_K_CHUNKS = 5
 TOP_K_SUMMARIES = 3
 
 # ── LLM ───────────────────────────────────────────────────────────────────────
-ANTHROPIC_MODEL = "claude-sonnet-4-6"
-MAX_TOKENS_SUMMARY = 300
+ANTHROPIC_MODEL = "claude-sonnet-4-6"   # kept for chatbot only
+MAX_TOKENS_SUMMARY = 130                # used by local summarizer
 MAX_TOKENS_ANSWER = 600
 MAX_TOKENS_PERSONA = 1000
