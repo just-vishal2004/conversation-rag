@@ -16,7 +16,7 @@ EMBEDDING_MODEL = "all-MiniLM-L6-v2"
 
 # ── Topic Detection ────────────────────────────────────────────────────────────
 TOPIC_WINDOW_SIZE = 5
-TOPIC_SIMILARITY_THRESHOLD = 0.35
+TOPIC_SIMILARITY_THRESHOLD = 0.90   # updated based on actual score distribution
 TOPIC_MIN_SEGMENT_LENGTH = 10
 
 # ── Checkpoints ────────────────────────────────────────────────────────────────
