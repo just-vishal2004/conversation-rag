@@ -1,0 +1,159 @@
+{
+  "habits": [
+    {
+      "value": "Enjoys cooking",
+      "evidence": "Reading is a great way to relax. I love to cook too! What is your favorite meal to make?"
+    },
+    {
+      "value": "Late sleeper / night owl",
+      "evidence": "Hi! I love horror novels. I can stay up late reading them and it can mess up my sleep schedule."
+    },
+    {
+      "value": "Dietary preference mentioned",
+      "evidence": "Oh cool! I like to play music too. I'm also a vegan."
+    },
+    {
+      "value": "Early riser",
+      "evidence": "I'm actually a morning person! I usually wake up early and go for a run before work."
+    }
+  ],
+  "personal_facts": [
+    {
+      "value": "Has a pet",
+      "evidence": "I'm doing alright. I'm trying to keep up with my studies while also taking care of my dog. It's a lot of work, but I'm m"
+    },
+    {
+      "value": "Occupation: teacher",
+      "evidence": "I am a teacher."
+    },
+    {
+      "value": "Occupation: student",
+      "evidence": "I'm doing well, thanks for asking! I'm a student, and I'm trying to stay positive and focus on my studies. How about you"
+    },
+    {
+      "value": "Occupation: doctor",
+      "evidence": "Oh, that's cool! I am a doctor."
+    },
+    {
+      "value": "Occupation: writer",
+      "evidence": "I'm currently unemployed, but I'm a writer and I have a YouTube channel."
+    },
+    {
+      "value": "Occupation: musician",
+      "evidence": "Nice, I'm a musician too. What kind of music do you play?"
+    },
+    {
+      "value": "Occupation: nurse",
+      "evidence": "I bet! I'm a nurse too."
+    },
+    {
+      "value": "Occupation: designer",
+      "evidence": "I'm a designer, and I love being able to create things that people love and use in their everyday lives."
+    },
+    {
+      "value": "Occupation: chef",
+      "evidence": "Thanks, it's what I do. I'm a chef and I love to cook."
+    },
+    {
+      "value": "Occupation: programmer",
+      "evidence": "I'm a programmer, but I'm not sure if I'll be programming this weekend. I usually enjoy my morning coffee, though!"
+    }
+  ],
+  "personality_traits": [
+    {
+      "value": "Has a sense of humor",
+      "evidence": "That's cool! I'm a barista. I love books, and I like to watch funny and lighthearted shows to relax."
+    },
+    {
+      "value": "Expressive and grateful",
+      "evidence": "Thanks! I appreciate that. What do you like to do for fun?"
+    },
+    {
+      "value": "Curious and loves learning",
+      "evidence": "Oh, that's interesting! I've always been curious about the legal field."
+    },
+    {
+      "value": "Shows anxiety or nervousness",
+      "evidence": "I'm writing a novel. I'm really excited about it, but I'm nervous to share it with anyone."
+    }
+  ],
+  "communication_style": {
+    "avg_message_length_words": 11.1,
+    "style": "moderate",
+    "uses_emojis": false,
+    "asks_many_questions": true,
+    "total_messages_analyzed": 98079
+  },
+  "interests": [
+    {
+      "value": "Enjoys reading",
+      "evidence": "Yes! I love reading to kids. It's the best part of my job!"
+    },
+    {
+      "value": "Enjoys gardening",
+      "evidence": "That's great! I love gardening too. What kind of plants do you have?"
+    },
+    {
+      "value": "Enjoys cooking",
+      "evidence": "Wow, that's awesome! I love cooking."
+    },
+    {
+      "value": "Enjoys fishing",
+      "evidence": "That sounds nice. I love fishing too. I'm not very good at it, but I enjoy the peace and quiet of being out on the water"
+    },
+    {
+      "value": "Enjoys music",
+      "evidence": "Thank you! I love music too. I play the piano and I used to take ballet lessons when I was younger."
+    },
+    {
+      "value": "Enjoys hiking",
+      "evidence": "That sounds great! I love hiking. It's so peaceful and a great way to get some exercise."
+    },
+    {
+      "value": "Enjoys running",
+      "evidence": "That's great! I love running as a way to de-stress."
+    },
+    {
+      "value": "Enjoys swimming",
+      "evidence": "That's funny.  I love swimming and playing in the sand too.  I don't usually spill drinks on myself, but I've been known"
+    },
+    {
+      "value": "Enjoys dancing",
+      "evidence": "That sounds fun! I love dancing too."
+    },
+    {
+      "value": "Enjoys painting",
+      "evidence": "I love painting landscapes. I also like to draw animals."
+    },
+    {
+      "value": "Enjoys photography",
+      "evidence": "Hi I'm so glad to meet you! I love photography and video games!"
+    },
+    {
+      "value": "Enjoys gaming",
+      "evidence": "That's awesome! I love gaming too. I'm not very good at it, but I have a lot of fun."
+    },
+    {
+      "value": "Enjoys yoga",
+      "evidence": "That sounds really relaxing! I love yoga."
+    },
+    {
+      "value": "Enjoys cycling",
+      "evidence": "I agree! I love cycling too. I usually go for a ride on the weekends."
+    }
+  ],
+  "relationships": [
+    {
+      "value": "Close with family",
+      "evidence": "I'm doing great! I'm a fulltime student studying radiology at a local college and I also play in a band that my parents "
+    },
+    {
+      "value": "Has children",
+      "evidence": "It can be, but it's also very rewarding. I love being able to spend time with my kids and help them learn and grow."
+    },
+    {
+      "value": "In a relationship",
+      "evidence": "Hi! I'm heading home after a long run to see my girlfriend and eat some tacos. What are you up to today?"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "topic_checkpoints": [
+    {
+      "type": "topic",
+      "topic_index": 0,
+      "start_index": 0,
+      "end_index": 10,
+      "message_count": 11,
+      "summary": "User 1: I'm moving to Portland, Oregon. User 2: That sounds amazing! I love Portland. Do you still live there? User 1: No, I moved away a few years ago. But I still visit my family there often."
+    },
+    {
+      "type": "topic",
+      "topic_index": 1,
+      "start_index": 11,
+      "end_index": 21,
+      "message_count": 11,
+      "summary": "User 1: I've been meaning to try yoga but I've never really had the time. User 2: You definitely should!  It's a really cool place. User 1: Thanks for the recommendation!  I'm sure I'll love it."
+    },
+    {
+      "type": "topic",
+      "topic_index": 2,
+      "start_index": 22,
+      "end_index": 36,
+      "message_count": 15,
+      "summary": "User 1: I love the freedom of being able to learn whatever I want. User 2: I enjoy reading, cooking, and spending time with my family."
+    },
+    {
+      "type": "topic",
+      "topic_index": 3,
+      "start_index": 37,
+      "end_index": 49,
+      "message_count": 13,
+      "summary": "User 1: I used to have a dog, but he passed away a few years ago. User 2: I miss him every day. User 1: Well, it was nice talking to you."
+    },
+    {
+      "type": "topic",
+      "topic_index": 4,
+      "start_index": 50,
+      "end_index": 62,
+      "message_count": 13,
+      "summary": "User 1: You should definitely go! It's one of the most beautiful places I've ever been. User 2: So what do you do for fun? User 1: I'm a children's librarian. I love my job!"
+    },
+    {
+      "type": "topic",
+      "topic_index": 5,
+      "start_index": 63,
+      "end_index": 73,
+      "message_count": 11,
+      "summary": "User 1: I am sure you will do a lot of good work. User 2: I hope so! I am trying to stay positive and look forward to the future."
+    },
+    {
+      "type": "topic",
+      "topic_index": 6,
+      "start_index": 74,
+      "end_index": 84,
+      "message_count": 11,
+      "summary": "User 1: I'm doing well! What do you do for fun? User 2: I love to sing karaoke and I am really into archery. I'm also a single parent, but I'm lucky enough to have a great support system."
+    },
+    {
+      "type": "topic",
+      "topic_index": 7,
+      "start_index": 85,
+      "end_index": 94,
+      "message_count": 10,
+      "summary": "User 1: What do you do for work? User 2: I'm a software engineer. User 1: That's great! I'm sure you're a great nurse.User 2: Thank you! I try my best."
+    },
+    {
+      "type": "topic",
+      "topic_index": 8,
+      "start_index": 95,
+      "end_index": 105,
+      "message_count": 11,
+      "summary": "User 1: I'm a barista. I love books, and I like to watch funny and lighthearted shows to relax. User 2: I haven't read much lately, but I'm trying to get back into it. I enjoy gardening, listening to the Beatles, and spending time with my pets."
+    },
+    {
+      "type": "topic",
+      "topic_index": 9,
+      "start_index": 106,
+      "end_index": 122,
+      "message_count": 17,
+      "summary": "User 1: I love gardening too. What kind of plants do you have? User 2: I have a lot of different kinds of plants, including flowers, vegetables, and herbs. I also enjoy listening to music, watching movies, and reading."
+    },
+    {
+      "type": "topic",
+      "topic_index": 10,
+      "start_index": 123,
+      "end_index": 135,
+      "message_count": 13,
+      "summary": "User 1: I'm trying to keep up with my studies while also taking care of my dog. User 2: I have a son and I work full time, so I'm always busy. But it's worth it to spend time with the people I love."
+    },
+    {
+      "type": "topic",
+      "topic_index": 11,
+      "start_index": 136,
+      "end_index": 148,
+      "message_count": 13,
+      "summary": "User 1: I just got done making a delicious meal for my family. User 2: Lasagna is delicious! I'm not a very good cook, but I love to eat lasagna. User 1: You should try making it sometime! It's not as hard as it looks."
+    },
+    {
+      "type": "topic",
+      "topic_index": 12,
+      "start_index": 149,
+      "end_index": 166,
+      "message_count": 18,
+      "summary": "User 1: There are lots of great recipes online. User 2: Thanks for the suggestion! I'll have to look into it. User 1: I'm a stay-at-home mom. I love being able to spend time with my kids and help them learn."
+    },
+    {
+      "type": "topic",
+      "topic_index": 13,
+      "start_index": 167,
+      "end_index": 178,
+      "message_count": 12,
+      "summary": "User 1: I love the Outlander series by Diana Gabaldon. User 2: I'm jealous! I live in a city, so there aren't many hiking trails nearby."
+    },
+    {
+      "type": "topic",
+      "topic_index": 14,
+      "start_index": 179,
+      "end_index": 188,
+      "message_count": 10,
+      "summary": "User 1: Hi, I'm looking for someone to talk to. What do you enjoy doing? User 2: I'm a fisherman and I love spending time with my dog. I also love animals."
+    },
+    {
+      "type": "topic",
+      "topic_index": 15,
+      "start_index": 189,
+      "end_index": 199,
+      "message_count": 11,
+      "summary": "User 1: I've never been fishing before. User 2: You should try it sometime! It's a lot of fun. User 1: Maybe I will! Thanks for the suggestion."
+    }
+  ],
+  "message_checkpoints": [
+    {
+      "type": "message_interval",
+      "batch_number": 0,
+      "start_index": 0,
+      "end_index": 99,
+      "message_count": 100,
+      "summary": "User 1: I'm moving to Portland, Oregon. User 2: That sounds amazing! I love Portland. I'm originally from there. Do you still live there? User 1: No, I moved away a few years ago. I enjoy reading, cooking, and spending time with my family."
+    },
+    {
+      "type": "message_interval",
+      "batch_number": 1,
+      "start_index": 100,
+      "end_index": 199,
+      "message_count": 100,
+      "summary": "User 1: I've heard good things about that book! I'll have to check it out. User 2: I enjoy gardening, listening to the Beatles, and spending time with my pets. User 1: We should get together sometime and do something fun."
+    }
+  ]
+}
