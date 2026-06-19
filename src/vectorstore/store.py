@@ -6,6 +6,7 @@ import numpy as np
 import faiss
 from pathlib import Path
 from sentence_transformers import SentenceTransformer
+from tqdm import tqdm
 
 logger = logging.getLogger(__name__)
 
@@ -104,69 +105,49 @@ class VectorStore:
     def build_chunks_index(
         self, messages: list, chunk_size: int, overlap: int
     ) -> None:
-        """
-        Create chunks, embed them, and build the FAISS index.
-
-        Steps:
-            1. Call _create_chunks()
-            2. Extract the 'text' field from each chunk
-            3. Embed all texts using self.model.encode()
-            4. Create a FAISS IndexFlatIP index (inner product = cosine on normalized vectors)
-            5. Normalize embeddings with faiss.normalize_L2()
-            6. Add to index with index.add()
-            7. Store in self.chunks_index and self.chunks_meta
-        """
         logger.info("Creating message chunks...")
         self.chunks_meta = self._create_chunks(messages, chunk_size, overlap)
         logger.info(f"Created {len(self.chunks_meta)} chunks")
 
-        logger.info("Embedding chunks...")
-        texts = [c["text"] for c in self.chunks_meta]
-        embeddings = self.model.encode(
-            texts, batch_size=64, show_progress_bar=True
-        )
-        embeddings = np.array(embeddings, dtype=np.float32)
-
-        # normalize so inner product == cosine similarity
-        faiss.normalize_L2(embeddings)
-
-        logger.info("Building FAISS chunks index...")
+        logger.info("Embedding and indexing chunks in batches...")
         self.chunks_index = faiss.IndexFlatIP(self.embedding_dim)
-        self.chunks_index.add(embeddings)
+
+        batch_size = 500
+        texts = [c["text"] for c in self.chunks_meta]
+
+        for i in tqdm(range(0, len(texts), batch_size), desc="Indexing chunks"):
+            batch_texts = texts[i : i + batch_size]
+            batch_embeddings = self.model.encode(
+                batch_texts, batch_size=16, show_progress_bar=False
+            )
+            batch_embeddings = np.array(batch_embeddings, dtype=np.float32)
+            faiss.normalize_L2(batch_embeddings)
+            self.chunks_index.add(batch_embeddings)
+
         logger.info(f"Chunks index contains {self.chunks_index.ntotal} vectors")
 
     def build_summaries_index(self, checkpoints: dict) -> None:
-        """
-        Embed all checkpoint summaries and build the FAISS summaries index.
-
-        Args:
-            checkpoints: dict loaded from checkpoints.json with keys:
-                         'topic_checkpoints' and 'message_checkpoints'
-
-        Steps:
-            1. Combine topic_checkpoints + message_checkpoints into one list
-            2. Extract the 'summary' field from each
-            3. Embed all summaries
-            4. Normalize and add to a new IndexFlatIP
-            5. Store in self.summaries_index and self.summaries_meta
-        """
         all_checkpoints = (
             checkpoints.get("topic_checkpoints", []) +
             checkpoints.get("message_checkpoints", [])
         )
 
-        logger.info(f"Embedding {len(all_checkpoints)} summaries...")
-        texts = [cp["summary"] for cp in all_checkpoints]
-        embeddings = self.model.encode(
-            texts, batch_size=64, show_progress_bar=True
-        )
-        embeddings = np.array(embeddings, dtype=np.float32)
-        faiss.normalize_L2(embeddings)
-
-        logger.info("Building FAISS summaries index...")
+        logger.info(f"Embedding {len(all_checkpoints)} summaries in batches...")
         self.summaries_index = faiss.IndexFlatIP(self.embedding_dim)
-        self.summaries_index.add(embeddings)
         self.summaries_meta = all_checkpoints
+
+        texts = [cp["summary"] for cp in all_checkpoints]
+        batch_size = 500
+
+        for i in tqdm(range(0, len(texts), batch_size), desc="Indexing summaries"):
+            batch_texts = texts[i : i + batch_size]
+            batch_embeddings = self.model.encode(
+                batch_texts, batch_size=16, show_progress_bar=False
+            )
+            batch_embeddings = np.array(batch_embeddings, dtype=np.float32)
+            faiss.normalize_L2(batch_embeddings)
+            self.summaries_index.add(batch_embeddings)
+
         logger.info(
             f"Summaries index contains {self.summaries_index.ntotal} vectors"
         )
